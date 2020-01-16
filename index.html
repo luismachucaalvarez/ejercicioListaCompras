@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/misestilos.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    
+        <h1 class="text-center">Lista de Compras</h1>
+    
+    <div class="container-fluid contenedor-formulario">
+        <form id="formulario-producto">
+            <div class="form-group">
+                <label for="nombre-articulo">Nombre artículo:</label>
+                <input class="form-control" type="text" id="nombre-articulo" name="nombre-articulo">
+            </div>
+            <div class="form-group">
+                <label for="cantidad-articulos">Cantidad:</label>
+                <input  class="form-control" type="number" name="" id="cantidad-articulos">
+            </div>
+            <div class="form-group">
+                <label for="unidad-medida">Unidad medida</label>
+                <select  class="form-control" name="" id="unidad-medida">
+                    <option value="unidad">Unidad</option>
+                    <option value="">Kilo</option>
+                    <option value="">Gramos</option>
+                    <option value="">Litros</option>
+                    <option value="">Centimetros Cúbicos</option>
+                </select>
+            </div>
+            <button class="btn btn-secondary limpiar-datos">Limpiar</button>
+            <button class="btn btn-primary" id="enviar-producto-lista" type="submit">Agregar artículo</button>
+        </form>
+    </div>
+    <div class="container-fluid columna-articulos">
+        <div >
+            <table class="table" id="lista-compras">
+                <thead>
+                    <th>Cantidad</th>
+                    <th>Artículo</th>
+                    <th>Valor Unitario</th>
+                    <th colspan="2">Acciones</th>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

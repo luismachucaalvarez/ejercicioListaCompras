@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .contenedor-formulario,
+    .columna-articulos{
+        width: 48%;
+    }
+
+    .contenedor-formulario{
+        float: left;
+    }
+
+    .columna-articulos{
+        float: right;
+    }
+}
+
+a.agregar-precio,
+a.agregar-precio:hover,
+a.eliminar-articulo,
+a.eliminar-articulo:hover{
+    color: red;
+    cursor: pointer;
+}
+
